@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 500px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .radio-group {
+            margin-top: 5px;
+        }
+        .radio-group input {
+            width: auto;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Exam Registration Form</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" name="fullname" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+
+        <label>G</label>
+        <div class="radio-group">
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </div>
+
+        <label>Mobile Number</label>
+        <input type="tel" name="mobile" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Address</label>
+        <textarea name="address" rows="3"></textarea>
+
+        <label>ID Type</label>
+        <select name="idtype">
+            <option>Aadhaar</option>
+            <option>Passport</option>
+            <option>Driving License</option>
+        </select>
+
+        <label>ID Number</label>
+        <input type="text" name="idnumber">
+
+        <label>Highest Qualification</label>
+        <input type="text" name="qualification">
+
+        <label>Exam Name</label>
+        <input type="text" name="examname" required>
+
+        <label>Preferred Exam Center</label>
+        <input type="text" name="center">
+
+        <label>Upload Photo</label>
+        <input type="file" name="photo">
+
+        <label>Upload Signature</label>
+        <input type="file" name="signature">
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
